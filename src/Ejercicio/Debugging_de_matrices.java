@@ -58,11 +58,6 @@ public class Debugging_de_matrices {
 		            System.out.println("\nLa suma de los elementos es: " + sum);
 		        } catch (ArrayIndexOutOfBoundsException e) {
 		            System.out.println("\nError al intentar sumar: " + e.toString());
-		        }
-			}
-
-		}
-		
+		   }
+		}		
 	}
-
-}
