@@ -43,7 +43,7 @@ public class Debugging_de_matrices {
 		        try {
 		            System.out.println("\nAccediendo al elemento en [3][0]: " + matrix[3][0]);
 		        } catch (ArrayIndexOutOfBoundsException e) {
-		            System.out.println("\nError: " + e.toString());
+		        	System.out.println("\nIndice fuera de límites: [3][0]");
 		        }
 
 		        // Paso 4: Intentar realizar un cálculo incorrecto con la matriz		        
