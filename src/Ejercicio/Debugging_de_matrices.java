@@ -43,15 +43,15 @@ public class Debugging_de_matrices {
 		        try {
 		            System.out.println("\nAccediendo al elemento en [3][0]: " + matrix[3][0]);
 		        } catch (ArrayIndexOutOfBoundsException e) {
-		        	System.out.println("\nIndice fuera de límites: [3][0]");
+		        	System.out.println("\nÍndice fuera de límites: [3][0]");
 		        }
 
 		        // Paso 4: Intentar realizar un cálculo incorrecto con la matriz		        
 		        try {
 		            int sum = 0;
 		            // Intento de sumar los elementos de la matriz de forma incorrecta
-		            for (int i = 0; i <= matrix.length; i++) {  // Error: índice fuera de límites
-		                for (int j = 0; j <= matrix[i].length; j++) {  // Error: índice fuera de límites
+		            for (int i = 0; i < matrix.length; i++) {  // Error: índice fuera de límites
+		                for (int j = 0; j < matrix[i].length; j++) {  // Error: índice fuera de límites
 		                    sum += matrix[i][j];
 		                }
 		            }
